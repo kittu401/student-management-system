@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <title>Student Register form</title>
+</head>
+<body>
+<center><h1 style="border-bottom-width: 50px;margin-bottom: 50px;"
+>Student Registration form</h1></center>
+
+<div class="container">
+  <div class="row" style="
+    margin-left: 30%;">
+  	<div class="col-md-6">
+<form method="post" action="/stu_reg1">
+          <form class="form-horizontal" action="" method="POST">
+          <fieldset>
+
+            <div class="control-group">
+              <label class="control-label" for="username">Name</label>
+              <div class="controls">
+                <input type="text" id="username" name="username" placeholder="" class="form-control input-lg">
+
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="course">Course</label>
+              <div class="controls">
+                <input type="text" id="course" name="course" placeholder="" class="form-control input-lg">
+
+              </div>
+            </div>
+
+
+            <div class="control-group">
+              <label class="control-label" for="semester">Semester</label>
+              <div class="controls">
+                <input type="text" id="semester" name="semester" placeholder="" class="form-control input-lg">
+
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label" for="Form_no">Form No</label>
+              <div class="controls">
+                <input type="text" id="Form_no" name="Form_no" placeholder="" class="form-control input-lg">
+
+              </div>
+            </div>
+
+             <div class="control-group">
+              <label class="control-label" for="Contact">Contact No</label>
+              <div class="controls">
+                <input type="text" id="Contact" name="Contact" placeholder="" class="form-control input-lg">
+
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label" for="email">E-mail</label>
+              <div class="controls">
+                <input type="email" id="email" name="email" placeholder="" class="form-control input-lg">
+
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label" for="password">Password</label>
+              <div class="controls">
+                <input type="password" id="password" name="password" placeholder="" class="form-control input-lg">
+
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label" for="Address">Address</label>
+              <div class="controls">
+                <input type="text" id="Address" name="Address" placeholder="" class="form-control input-lg">
+
+              </div>
+            </div>
+        <br>
+            <div class="control-group">
+              <!-- Button -->
+              <div class="controls">
+                <button class="btn btn-success">Register</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+</form>
+      <div class="border-top-pt-3">
+            <small class="text-muted">
+                Already have an Account? <a href="{{ url_for('stu_login') }}">Login</a>
+            </small>
+        </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
